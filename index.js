@@ -27,10 +27,14 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
         for (const element of subPages) {
             const subPageResponse = await notion.pages.retrieve({ page_id: element.id });
             const title = subPageResponse.properties.title.title[0].plain_text
+            const shareLink = process.env.NOTION_SHARE_URL + element.id.replaceAll("-","")
+            console.log(shareLink)
+            console.log(element.id)
+            console.log(element.id.replace("-",""))
             feed.addItem({
                 title: title,
                 id: element.id,
-                link: subPageResponse.url,
+                link: shareLink,
                 author: [{ name: process.env.RSS_AUTHOR }],
                 date: new Date(element.created_time),
             });

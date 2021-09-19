@@ -11,7 +11,8 @@ useage:
 export NOTION_API_KEY="<your-API-key>"
 export NOTION_PAGE_ID="<page-id>"
 
-# config
+# rss
+export NOTION_SHARE_URL="https://finctive.notion.site/"
 export RSS_WEBSITE="http://finctive.com/"
 export RSS_AUTHOR="FINCTIVE"
 export RSS_TITLE="造物指南"
