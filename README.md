@@ -2,7 +2,7 @@ Generate RSS file from a notion page(each subpage is a post.)
 
 It uses the time when the block(page) was created as the publish time of the post.
 
-No article content, only title and link.
+No article content, only titles and links.
 
 [Notion API](https://developers.notion.com/) is required.
 
