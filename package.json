@@ -1,0 +1,15 @@
+{
+  "name": "notion-page-rss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^0.3.2",
+    "feed": "^4.2.2"
+  }
+}
