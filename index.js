@@ -29,8 +29,7 @@ const notion = new Client({ auth: process.env.NOTION_API_KEY });
             const title = subPageResponse.properties.title.title[0].plain_text
             const shareLink = process.env.NOTION_SHARE_URL + element.id.replaceAll("-","")
             console.log(shareLink)
-            console.log(element.id)
-            console.log(element.id.replace("-",""))
+            console.log(title)
             feed.addItem({
                 title: title,
                 id: element.id,
