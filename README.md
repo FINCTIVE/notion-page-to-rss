@@ -20,3 +20,5 @@ export RSS_FILE_NAME="index.xml"
 
 node ./index.js
 ```
+
+*I don't know Javascript. The code is ugly.*
